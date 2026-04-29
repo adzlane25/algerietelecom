@@ -1,0 +1,70 @@
+.layout {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.content {
+  padding: 0;
+  background: #f5f7fa;
+  min-height: calc(100vh - 60px);
+}
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.content {
+  padding: 24px;
+  background: #f0f4f8;
+  min-height: calc(100vh - 60px);
+}
+
+/* تحسين للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .content {
+    padding: 16px;
+  }
+}
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 280px; /* نفس عرض الـ Sidebar */
+  overflow-x: auto;
+}
+
+.content {
+  padding: 24px;
+  background: #f0f4f8;
+  min-height: calc(100vh - 60px);
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-right: 80px;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+}
