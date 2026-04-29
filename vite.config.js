@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/algerietelecom/',   // ⬅️ أضفت هذا السطر (مهم جداً لـ GitHub Pages)
   server: {
     host: '0.0.0.0',
     allowedHosts: [
